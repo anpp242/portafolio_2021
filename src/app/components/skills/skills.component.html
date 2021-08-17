@@ -1,0 +1,27 @@
+<div id="skills">
+  <div class="box-skils">
+    <div class="txt-skills">
+      <div>
+        <h2>MY SKILLS</h2>
+        <p>
+          Select one of those items and then you can filter the skills
+        </p>
+        <ul>
+          <!-- <li><a (click)="filterSkills( 'all' )">All</a></li> -->
+          <li><a (click)="filterSkills( 'technologies' )">Technologies</a></li>
+          <li><a (click)="filterSkills( 'frameworks' )">Frameworks</a></li>
+          <li><a (click)="filterSkills( 'tools' )">Tools</a></li>
+          <li><a (click)="filterSkills( 'design' )">Design</a></li>
+          <li><a (click)="filterSkills( 'complementaries' )">Complementaries</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="items-skills">
+      <div class="box-items-skills">
+        <div *ngFor="let skill of skills">
+          <app-skill-card [letter]="skill.letter" [name]="skill.name"></app-skill-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

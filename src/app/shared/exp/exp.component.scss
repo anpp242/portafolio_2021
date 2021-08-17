@@ -1,0 +1,63 @@
+.experiences-card{
+  background: rgba(11, 139, 148,0.1);
+  border-radius: 1.1rem;
+  margin: 6rem 1rem 0 1rem;
+  min-height: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 3rem;
+  transition: all .3s ease;
+  .logo-experience{
+    width: 8rem;
+    height: 8rem;
+    margin-top: -8rem;
+    border-radius: 30rem;
+    position: relative;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 0 ;
+    transition: all .3s ease;
+    img{
+      max-height: 65%;
+      max-width: 80%;
+      object-fit: contain;
+      width: auto;
+      opacity: 0 ;
+      transition: all .4s ease;
+    }
+  }
+  .text-experience{
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    .role{
+      color: #48F4FF;
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .logo-experience{
+    width: 6rem !important;
+    height: 6rem !important;
+    margin-top: -4rem !important;
+  }
+
+  .experiences-card{
+    margin: 4rem 1rem 0 1rem !important;
+  }
+
+  .box-info-expetiernces{
+    img{
+      display: none !important;
+    }
+  }
+}

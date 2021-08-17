@@ -1,0 +1,97 @@
+#experience{
+  background: radial-gradient(131.18% 286.74% at 80.9% -11.11%, #016D87 0%, #00F0FF 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 2rem;
+  }
+  .box-experiences{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    .box-info-expetiernces{
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .btn-next{
+        width: 20rem;
+        margin-left: -1.5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: all .2s ease;
+        &:hover{
+          opacity: .5;
+          transition: all .5s ease;
+        }
+        img{
+          width: 6rem;
+        }
+      }
+      p{
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1.3rem;
+        transition: all .4s ease;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .box70{
+    width: 70%;
+  }
+  .box60{
+    width: 60%;
+  }
+  .box50{
+    width: 50%;
+  }
+  .box40{
+    width: 40%;
+  }
+  .box30{
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .box30, .box40, .box50, .box60, .box70{
+    width: 100% !important;
+  }
+
+  .logo-experience{
+    width: 6rem !important;
+    height: 6rem !important;
+    margin-top: -4rem !important;
+  }
+
+  .experiences-card{
+    margin: 4rem 1rem 0 1rem !important;
+  }
+
+  .box-info-expetiernces{
+    img{
+      display: none !important;
+    }
+  }
+
+  .box-info-expetiernces{
+    padding: 1rem !important;
+    display: block !important;
+  }
+}
+
+

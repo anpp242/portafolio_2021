@@ -1,0 +1,96 @@
+@import "~src/assets/css/index";
+
+#skills{
+  min-height: 50vh;
+  .box-skils{
+    display: flex;
+    background: #00CBD8;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    p{
+      font-size: 18px;
+    }
+    .txt-skills{
+      background: #00CBD8;
+      height: 100vh;
+      display: flex;
+      width: 50%;
+      padding: 2rem 3rem 3rem 5rem;
+      box-sizing: border-box;
+      color: #ffffff;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      h2{
+        color: #003857;
+        font-size: 34px;
+      }
+      p{
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+      ul{
+        padding-inline-start: 0px;
+        li{
+          list-style: none;
+          margin: 1rem 0;
+          a{
+            text-decoration: none;
+            color: #79f7ff;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: all .3s ease;
+          }:hover{
+            color: #003857;
+            margin-left: .5rem;
+            transition: all .3s ease;
+          }
+        }
+      }
+    }
+    .items-skills{
+      background: #ffffff;
+      min-height: 100vh;
+      width: 50%;
+      padding: 3rem 5rem 3rem 3rem;
+      box-sizing: border-box;
+      .box-items-skills{
+        display: flex;
+        flex-flow: wrap;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 768px){
+  .txt-skills{
+    height: auto !important;
+    display: flex !important;
+    width: 100% !important;
+    padding: 3rem !important;
+  }
+
+  .items-skills{
+    background: #ffffff;
+    min-height: auto !important;
+    width: 100% !important;
+    padding: 3rem 5rem 3rem 3rem;
+    box-sizing: border-box;
+  }
+
+  .box-items-skills{
+    flex-flow: wrap !important;
+    height: auto !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: row !important;
+  }
+}

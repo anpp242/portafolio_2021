@@ -1,0 +1,35 @@
+<div id="experience">
+  <div class="content">
+    <h2>WORK EXPERIENCE</h2>
+
+    <div class="box-experiences">
+      <div class="box-slide-experiences box40">
+        <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" #owlExperiences>
+
+          <ng-template carouselSlide *ngFor="let experience of experiences">
+            <div class="slide">
+              <app-exp
+                [experience] = "experience"
+                (content) = "geData($event)"
+              ></app-exp>
+            </div>
+          </ng-template>
+
+        </owl-carousel-o>
+      </div>
+
+      <div class="box-info-expetiernces box60">
+        <a class="btn btn-next" (click)="owlExperiences.next()">
+          <img src="./assets/images/right-arrow.svg" alt="Next">
+        </a>
+        <div class="text-experiences">
+          <p><span>Responsabilities: </span>{{contentWatch.responsabilities}}</p>
+          <p><span>Golas: </span>{{contentWatch.goals}}</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+

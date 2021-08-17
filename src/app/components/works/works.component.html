@@ -1,0 +1,22 @@
+<div id="works">
+  <div class="content">
+    <h2>SOME OF MY WORKS</h2>
+
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let work of works">
+        <div class="slide">
+          <app-work-card
+          [id] = "work.id"
+          [preview] = "work.preview"
+          [title] = "work.title"
+          [team] = "work.tema"
+          [tools] = "work.tools"
+          [content] = "work.content"
+          [likes] = "work.likes"
+          ></app-work-card>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+
+  </div>
+</div>

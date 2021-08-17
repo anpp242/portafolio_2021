@@ -1,0 +1,73 @@
+.work-card{
+  //width: 330px;
+  margin: 1rem 2rem;
+  .preview{
+    position: relative;
+    .likesNumbers{
+      position: absolute;
+      top: 1rem;
+      right: 3.5rem;
+      cursor: pointer;
+      z-index: 100;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .like{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .img-preview{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 11px 11px 0 0;
+    }
+    .shadow{
+      content: '';
+      background: rgba(0,0,0,.4);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 11px 11px 0 0;
+      transition: all .3s ease;
+    }
+  }
+  .content-card{
+    padding: 1.5rem;
+    margin-top: -1px;
+    box-shadow: 0px 13px 14px -10.8px #888888;
+    border-radius: 0 0 11px 11px;
+    background: #ffffff;
+    h4{
+      color: #00CBD8;
+      font-weight: 500;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+    p{
+      color: #888888;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    .tools{
+      color: #00CBD8;
+      font-size: 12px;
+    }
+    .head-content{
+      color: #00CBD8;
+      display: flex;
+      flex-wrap: wrap;
+      .card-title{
+        min-width: 80%;
+      }
+      .team{
+        width: 20%;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+  }
+}

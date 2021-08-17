@@ -1,0 +1,20 @@
+@import "~src/assets/css/index";
+
+#about{
+  background: #003857;
+  color: #ffffff;
+  padding: 5rem 0;
+  h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
