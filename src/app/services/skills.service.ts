@@ -41,37 +41,37 @@ export class SkillsService {
       {
         name: 'NodeJs',
         letter: 'N',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'Mongo DB',
         letter: 'M',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'MySQL',
         letter: 'M',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'MariaDB',
         letter: 'M',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'AWS Cloud',
         letter: 'A',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'GIT',
         letter: 'G',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'GitHub',
         letter: 'G',
-        keyWord: 'tools'
+        keyWord: 'complementaries'
       },
       {
         name: 'Java',
@@ -112,6 +112,31 @@ export class SkillsService {
         name: 'Figma',
         letter: 'F',
         keyWord: 'design'
+      },
+      {
+        name: 'Wordpress',
+        letter: 'W',
+        keyWord: 'complementaries'
+      },
+      {
+        name: 'VS Code',
+        letter: 'V',
+        keyWord: 'tools'
+      },
+      {
+        name: 'Postman',
+        letter: 'P',
+        keyWord: 'tools'
+      },
+      {
+        name: 'MySQL Workbech',
+        letter: 'M',
+        keyWord: 'tools'
+      },
+      {
+        name: 'Terminal',
+        letter: 'T',
+        keyWord: 'tools'
       },
     ];
   }
