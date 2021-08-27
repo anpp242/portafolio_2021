@@ -13,12 +13,14 @@ export class HeroComponent implements OnInit {
   public developer : string;
   public classes : string;
   public classes2 : string;
+  public menuStatus : boolean;
 
   constructor() {
     this.name = 'Pava';
     this.role = 'Omar';
     this.classes = 'pava';
     this.classes2 = 'omar';
+    this.menuStatus = false;
   }
 
   ngOnInit(): void {
@@ -63,6 +65,15 @@ export class HeroComponent implements OnInit {
         }
       },1500);
     }, 4000);
+  }
+
+  openMenu(){
+    if(this.menuStatus === false){
+      this.menuStatus = true;
+    }else{
+      this.menuStatus = false;
+    }
+    console.log(this.menuStatus)
   }
 
 }

@@ -1,5 +1,16 @@
 <div id="hero">
   <div class="content">
+    <img (click)="openMenu()" class="menu-button" src="./assets/images/menu.svg" alt="Linkedin" width="36" height="36">
+    <div class="menu" [ngClass]="menuStatus ? 'open' : 'close'">
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
     <div class="box-hero">
       <div class="txt-hero">
         <h2>I'm</h2>
@@ -7,7 +18,7 @@
         <h2 class="txt-chn-2 {{classes}}">{{name}}</h2>
       </div>
       <div class="img-hero">
-        <img src="./assets/images/profile-image.png" alt="Omar Pava">
+        <img rel="preload" as="image" src="./assets/images/profile-image.png" alt="Omar Pava">
       </div>
     </div>
   </div>

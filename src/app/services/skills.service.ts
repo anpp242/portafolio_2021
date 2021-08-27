@@ -138,6 +138,21 @@ export class SkillsService {
         letter: 'T',
         keyWord: 'tools'
       },
+      {
+        name: 'Gulp',
+        letter: 'G',
+        keyWord: 'tools'
+      },
+      {
+        name: 'NPM',
+        letter: 'N',
+        keyWord: 'tools'
+      },
+      {
+        name: 'Composer',
+        letter: 'C',
+        keyWord: 'tools'
+      },
     ];
   }
 
