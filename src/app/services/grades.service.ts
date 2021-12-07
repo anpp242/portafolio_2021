@@ -40,9 +40,27 @@ export class GradesService {
       },
       {
         id: 3,
-        place: 'XXXXXX',
-        grade: 'Scrum Basic',
+        place: 'SCRUMStudy',
+        grade: 'Scrum Fundamentals Certified',
         date: '2021'
+      },
+      {
+        id: 4,
+        place: 'Udemy',
+        grade: 'TypeScript',
+        date: '2018'
+      },
+      {
+        id: 5,
+        place: 'Udemy',
+        grade: 'JavaScript Fundamentals',
+        date: '2018'
+      },
+      {
+        id: 6,
+        place: 'Udemy',
+        grade: 'Angular 2 - Crea webApps desde cero',
+        date: '2018'
       },
     ];
   }
