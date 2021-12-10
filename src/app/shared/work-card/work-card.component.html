@@ -6,8 +6,12 @@
       <img *ngIf="like" src="./assets/images/color-hart.svg" alt="" width="22" (click)="makeUnLike()">
       <img *ngIf="!like" src="./assets/images/hart.svg" alt="" width="22" (click)="makeLike()">
     </div>
-    <div class="shadow"></div>
-    <img class="img-preview" src="{{preview}}" alt="{{title}}">
+    <div class="shadow" *ngIf="!gallery"></div>
+    <app-gallery *ngIf="gallery" 
+        [first] = 'preview'
+        [images] = 'gallery'
+    ></app-gallery>
+    <img *ngIf="!gallery" class="img-preview" src="{{preview}}" alt="{{title}}">
   </div>
 
   <div class="content-card">

@@ -12,6 +12,7 @@ export class WorkCardComponent implements OnInit {
   @Input() team: string;
   @Input() tools: string;
   @Input() content: string;
+  @Input() gallery: any;
   @Input() likes: number;
   public dataEmitter: Object;
 
@@ -25,7 +26,6 @@ export class WorkCardComponent implements OnInit {
       if(JSON.parse(localStorage.getItem('works'))){
         let items = JSON.parse(localStorage.getItem('works'));
         if(items.find(e => e.id === this.id)){
-          console.log('ok')
           this.like = true;
         }
       }

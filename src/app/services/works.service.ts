@@ -10,17 +10,35 @@ export class WorksService {
     this.works = [
       {
         id: 0,
-        preview: 'https://th.bing.com/th/id/OIP.V6x2fFZV_xDBm-YiprNXjAHaEh?pid=ImgDet&rs=1',
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/gabrica_media_bz5jff.jpg',
         title: 'Gabrica Media',
         team: 'Single',
         tools: 'Angular, HTML, CSS3, DynamoDB, S3, SQL, REST API',
         content: 'Gabrica media is a project for principal customers of the company where the users can download digital resources for their e-commerce, social media and digital portals',
         likes: 10,
+        gallery: [
+          {
+            label: '',
+            image: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg'
+          },
+          {
+            label: '',
+            image: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_detalle_f7wcfw.jpg'
+          },
+          {
+            label: '',
+            image: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/catalogo_dedqas.jpg'
+          },
+          {
+            label: '',
+            image: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/videos_tezpxc.jpg'
+          },
+        ],
         iLike: false
       },
       {
         id: 1,
-        preview: 'https://th.bing.com/th/id/OIP.V6x2fFZV_xDBm-YiprNXjAHaEh?pid=ImgDet&rs=1',
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/induccion_gabrica_xe0slh.jpg',
         title: 'Web Induction Gabrica',
         team: 'Single',
         tools: 'PHP, MySQL, jQuery, HTML, CSS3, JS',
@@ -30,7 +48,7 @@ export class WorksService {
       },
       {
         id: 2,
-        preview: 'https://th.bing.com/th/id/OIP.V6x2fFZV_xDBm-YiprNXjAHaEh?pid=ImgDet&rs=1',
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/cuponera_ja3mdp.jpg',
         title: 'Cuponera | Farmatodo',
         team: 'Develop Team',
         tools: 'Angular, HTML, CSS3, SSAS, REST API',
@@ -40,7 +58,7 @@ export class WorksService {
       },
       {
         id: 3,
-        preview: 'https://th.bing.com/th/id/OIP.V6x2fFZV_xDBm-YiprNXjAHaEh?pid=ImgDet&rs=1',
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/gabrica_oqyoon.jpg',
         title: 'Gabrica`s Web Site (Co, Cl, Pe)',
         team: 'Single',
         tools: 'Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS',
@@ -50,12 +68,22 @@ export class WorksService {
       },
       {
         id: 4,
-        preview: 'https://th.bing.com/th/id/OIP.V6x2fFZV_xDBm-YiprNXjAHaEh?pid=ImgDet&rs=1',
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/neon_sxumh5.jpg',
         title: 'Neon',
         team: 'Develop Team',
         tools: 'Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS',
         content: 'Neon`s web is a little shop of a book for childrens that want to learn english, there the users can learn about the book and know more about his history',
         likes: 14,
+        iLike: false
+      },
+      {
+        id: 5,
+        preview: 'https://res.cloudinary.com/dtaxfimxy/image/upload/v1638849180/happina_dbdefi.jpg',
+        title: 'Happina',
+        team: 'Develop Team',
+        tools: 'Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS',
+        content: 'Happina`s web page when the user can book a room, read the blog articles about the city and your incredible scenery',
+        likes: 13,
         iLike: false
       }
     ];

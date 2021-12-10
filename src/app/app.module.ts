@@ -18,6 +18,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpComponent } from './shared/exp/exp.component';
 import { GradeComponent } from './shared/grade/grade.component';
+import { GalleryComponent } from './shared/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { GradeComponent } from './shared/grade/grade.component';
     SkillCardComponent,
     WorkCardComponent,
     ExpComponent,
-    GradeComponent
+    GradeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

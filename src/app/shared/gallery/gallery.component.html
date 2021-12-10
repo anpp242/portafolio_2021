@@ -1,0 +1,14 @@
+<section>
+    <owl-carousel-o [options]="customOptions" #owlGallery>
+        <ng-template carouselSlide>
+            <div class="slide">
+                <img src="{{first}}" alt="">
+            </div>
+        </ng-template>
+        <ng-template carouselSlide *ngFor="let image of images">
+            <div class="slide">
+                <img src="{{image.image}}" alt="image.label">
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</section>
