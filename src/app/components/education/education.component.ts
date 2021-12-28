@@ -17,7 +17,7 @@ export class EducationComponent implements OnInit {
     this.customOptions = {
       loop: true,
       dots: true,
-      items: 3,
+      items: 4,
       autoplay: false,
       mouseDrag: true,
       autoHeight: true,
@@ -42,7 +42,7 @@ export class EducationComponent implements OnInit {
           dots: true,
         },
         1000: {
-          items: 3,
+          items: 4,
           dots: true,
         }
       },
