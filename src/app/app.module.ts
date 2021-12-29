@@ -20,6 +20,10 @@ import { ExpComponent } from './shared/exp/exp.component';
 import { GradeComponent } from './shared/grade/grade.component';
 import { GalleryComponent } from './shared/gallery/gallery.component';
 
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment.prod';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +46,9 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    provideFirebaseApp(() => initializeApp( environment.firebaseConfig )),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
