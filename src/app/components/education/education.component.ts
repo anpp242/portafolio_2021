@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { map } from 'rxjs/operators';
 import { GradesService } from 'src/app/services/grades.service';
 
 @Component({
@@ -48,11 +49,23 @@ export class EducationComponent implements OnInit {
       },
       nav: false
     };
-
-    this.education = gradesService.getGrades();
   }
 
+  async getGrades(){
+    this.gradesService.getGrades().snapshotChanges().pipe(
+      map( change =>
+       change.map( c =>({
+         id: c.payload['key'], ...c.payload.val()
+       }))
+      )
+    ).subscribe( data =>{
+     this.education = data;
+     console.log('Education: ', data);
+    } )
+ }
+
   ngOnInit(): void {
+    this.getGrades();
   }
 
 }
