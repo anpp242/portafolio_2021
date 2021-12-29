@@ -22,7 +22,7 @@
         <a class="btn btn-next" (click)="owlExperiences.next()">
           <img src="./assets/images/right-arrow.svg" alt="Next">
         </a>
-        <div class="text-experiences">
+        <div class="text-experiences" *ngIf="contentWatch">
           <p><span>Responsabilities: </span>{{contentWatch.responsabilities}}</p>
           <p><span>Golas: </span>{{contentWatch.goals}}</p>
         </div>

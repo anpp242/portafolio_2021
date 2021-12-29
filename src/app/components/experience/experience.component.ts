@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { map } from 'rxjs/operators';
+import { Experiences } from 'src/app/models/experiences';
 import { ExperiencesService } from 'src/app/services/experiences.service';
 
 @Component({
@@ -13,11 +15,13 @@ export class ExperienceComponent implements OnInit {
   activeSlides: SlidesOutputData;
   slidesStore: any[];
   public contentWatch: any;
+  public list: any;
+  public experienceIndex = -1;
 
   constructor(
     private experiencesService: ExperiencesService
   ) {
-    this.experiences = experiencesService.getExperiences();
+    //this.experiences = experiencesService.getExperiences();
 
     this.customOptions = {
       loop: true,
@@ -56,14 +60,30 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.contentWatch = this.experiences.filter(e => e.id === 0)[0];
+    this.getExperiencesFire();
   }
 
   getPassedData(data: SlidesOutputData){
     setTimeout(()=>{
       this.activeSlides = data;
-      this. contentWatch = this.experiences.filter(e => e.id === this.activeSlides.startPosition)[0];
+      this.contentWatch = this.experiences.filter(e => e.id === this.activeSlides.startPosition)[0];
     }, 300);
+  }
+
+  async getExperiencesFire(){
+     this.list = this.experiencesService.getExperiencesFire().snapshotChanges().pipe(
+       map( change =>
+        change.map( c =>({
+          id: c.payload['key'], ...c.payload.val()
+        }))
+       )
+     ).subscribe( data =>{
+      this.experiences = data;
+      this.contentWatch = this.experiences.filter(e => e.id === 0)[0];
+      console.log(data);
+     } )
+
+     //console.log(this.list)
   }
 
   geData(event){

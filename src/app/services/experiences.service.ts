@@ -1,13 +1,21 @@
 import { Injectable } from '@angular/core';
-//import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { Observable } from 'rxjs';
+import { Experiences } from '../models/experiences';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExperiencesService {
   private experiences : object;
+  private dbExperiences =  '/experiences';
+  private myExperiences : AngularFireList<Experiences>;
 
-  constructor() {
+  constructor(
+    private db: AngularFireDatabase
+  ) {
+    this.myExperiences = db.list(this.dbExperiences);
+
     this.experiences = [
       {
         id: 0,
@@ -55,6 +63,11 @@ export class ExperiencesService {
         goals: 'Pellentesque sollicitudin libero sit amet urna tempus, sed tristique nulla fringilla'
       }
     ];
+  }
+
+  getExperiencesFire (){
+    //console.log(this.myExperiences)
+    return this.myExperiences;
   }
 
   getExperiences(){
