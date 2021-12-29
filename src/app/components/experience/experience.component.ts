@@ -82,8 +82,6 @@ export class ExperienceComponent implements OnInit {
       this.contentWatch = this.experiences.filter(e => e.id === 0)[0];
       console.log(data);
      } )
-
-     //console.log(this.list)
   }
 
   geData(event){

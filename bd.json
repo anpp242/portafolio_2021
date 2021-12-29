@@ -1,0 +1,387 @@
+{
+  "experiences" :[
+    {
+      "date" : "2021 - Actual",
+      "goals" : [ "Develop web sites", "Monitoring the main web" ],
+      "id" : 0,
+      "logo" : "https://th.bing.com/th/id/OIP.RmF0dFpt8H_An6Uf7I3LKwHaI-?pid=ImgDet&rs=1",
+      "name" : "Farmatodo",
+      "responsabilities" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue urna id nibh eleifend congue. Etiam faucibus vehicula metus, ac volutpat arcu tincidunt et. ",
+      "role" : "Frontend Web Developer SemiSenior"
+    }, {
+      "date" : "2018 - 2021",
+      "goals" : [ "Develop web sites", "Monitoring the main web" ],
+      "id" : 1,
+      "logo" : "https://th.bing.com/th/id/OIP.Z-KG4qR9jTNifU23ig73OwHaHa?pid=ImgDet&rs=1",
+      "name" : "Gabrica",
+      "responsabilities" : "Vestibulum gravida rutrum magna sed ultricies. Nulla dictum volutpat porttitor. Suspendisse porttitor vulputate lacinia. Nam convallis convallis fringilla.",
+      "role" : "Web Developer Engineer"
+    }, {
+      "date" : "2017 - 2018",
+      "goals" : [ "Develop web sites", "Monitoring the main web" ],
+      "id" : 2,
+      "logo" : "https://agroexpo2013asocebu-com.webnode.com.co/_files/system_preview_detail_200000144-43d5f44ce1-public/Logo-Asocebu-01.png",
+      "name" : "Asocebú",
+      "responsabilities" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue urna id nibh eleifend congue. Etiam faucibus vehicula metus, ac volutpat arcu tincidunt et. ",
+      "role" : "Web Developer"
+    }, {
+      "date" : "2014 - 2017",
+      "goals" : [ "Develop web sites", "Monitoring the main web" ],
+      "id" : 3,
+      "logo" : "https://th.bing.com/th/id/OIP.CUqlv3cmsKP2ShfT7c_HQgAAAA?pid=ImgDet&rs=1",
+      "name" : "Manuela Beltrán University",
+      "responsabilities" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue urna id nibh eleifend congue. Etiam faucibus vehicula metus, ac volutpat arcu tincidunt et. ",
+      "role" : "Webmaster"
+    }, {
+      "date" : "2013 - 2014",
+      "goals" : [ "Develop web sites", "Monitoring the main web" ],
+      "id" : 4,
+      "logo" : "https://th.bing.com/th/id/OIP.3Eo4KmUBYzLZjlLP4NbLhQHaFa?pid=ImgDet&w=500&h=365&rs=1",
+      "name" : "Grupo A Estudio",
+      "responsabilities" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue urna id nibh eleifend congue. Etiam faucibus vehicula metus, ac volutpat arcu tincidunt et. ",
+      "role" : "Web Designer"
+    }
+  ],
+  "grades": [
+    {
+      "id": 0,
+      "place": "Manuela Beltrán University",
+      "grade": "Software Engineer",
+      "date": "2015 - 2021"
+    },
+    {
+      "id": 1,
+      "place": "CIDE",
+      "grade": "Tec. Graphic Designer",
+      "date": "2007 - 2009"
+    },
+    {
+      "id": 1,
+      "place": "English First (EF)",
+      "grade": "Elemental Level (A1)",
+      "date": "2020 - 2021"
+    },
+    {
+      "id": 2,
+      "place": "Udemy",
+      "grade": "Enhance Angular",
+      "date": "2021"
+    },
+    {
+      "id": 3,
+      "place": "Udemy",
+      "grade": "Unit Testing with Jasmine and Karma",
+      "date": "2021"
+    },
+    {
+      "id": 3,
+      "place": "SCRUMStudy",
+      "grade": "Scrum Fundamentals Certified",
+      "date": "2021"
+    },
+    {
+      "id": 4,
+      "place": "Udemy",
+      "grade": "TypeScript",
+      "date": "2018"
+    },
+    {
+      "id": 5,
+      "place": "Udemy",
+      "grade": "JavaScript Fundamentals",
+      "date": "2018"
+    },
+    {
+      "id": 6,
+      "place": "Udemy",
+      "grade": "Angular 2 - Crea webApps desde cero",
+      "date": "2018"
+    }
+  ],
+  "skills" : [
+    {
+      "name": "HTML",
+      "letter": "H",
+      "keyWord": "technologies",
+      "percent": 100
+    },
+    {
+      "name": "CSS",
+      "letter": "C",
+      "keyWord": "technologies",
+      "percent": 90
+    },
+    {
+      "name": "SASS",
+      "letter": "S",
+      "keyWord": "technologies",
+      "percent": 60
+    },
+    {
+      "name": "JavaScript",
+      "letter": "J",
+      "keyWord": "technologies",
+      "percent": 90
+    },
+    {
+      "name": "PHP",
+      "letter": "P",
+      "keyWord": "technologies",
+      "percent": 90
+    },
+    {
+      "name": "SQL",
+      "letter": "S",
+      "keyWord": "technologies",
+      "percent": 90
+    },
+    {
+      "name": "NodeJs",
+      "letter": "N",
+      "keyWord": "complementaries",
+      "percent": 50
+    },
+    {
+      "name": "Mongo DB",
+      "letter": "M",
+      "keyWord": "complementaries",
+      "percent": 100
+    },
+    {
+      "name": "MySQL",
+      "letter": "M",
+      "keyWord": "complementaries",
+      "percent": 90
+    },
+    {
+      "name": "MariaDB",
+      "letter": "M",
+      "keyWord": "complementaries",
+      "percent": 70
+    },
+    {
+      "name": "AWS Cloud",
+      "letter": "A",
+      "keyWord": "complementaries",
+      "percent": 60
+    },
+    {
+      "name": "GIT",
+      "letter": "G",
+      "keyWord": "complementaries",
+      "percent": 80
+    },
+    {
+      "name": "GitHub",
+      "letter": "G",
+      "keyWord": "complementaries",
+      "percent": 90
+    },
+    {
+      "name": "Java",
+      "letter": "J",
+      "keyWord": "technologies",
+      "percent": 30
+    },
+    {
+      "name": "Angular 2+",
+      "letter": "A",
+      "keyWord": "frameworks",
+      "percent": 90
+    },
+    {
+      "name": "jQuery",
+      "letter": "J",
+      "keyWord": "frameworks",
+      "percent": 90
+    },
+    {
+      "name": "Slim",
+      "letter": "S",
+      "keyWord": "frameworks",
+      "percent": 40
+    },
+    {
+      "name": "Jasmine",
+      "letter": "J",
+      "keyWord": "frameworks",
+      "percent": 70
+    },
+    {
+      "name": "Adobe Illustrator",
+      "letter": "I",
+      "keyWord": "design",
+      "percent": 90
+    },
+    {
+      "name": "Adobe Photoshop",
+      "letter": "P",
+      "keyWord": "design",
+      "percent": 90
+    },
+    {
+      "name": "Figma",
+      "letter": "F",
+      "keyWord": "design",
+      "percent": 80
+    },
+    {
+      "name": "Wordpress",
+      "letter": "W",
+      "keyWord": "complementaries",
+      "percent": 90
+    },
+    {
+      "name": "VS Code",
+      "letter": "V",
+      "keyWord": "tools",
+      "percent": 90
+    },
+    {
+      "name": "Postman",
+      "letter": "P",
+      "keyWord": "tools",
+      "percent": 80
+    },
+    {
+      "name": "MySQL Workbech",
+      "letter": "M",
+      "keyWord": "tools",
+      "percent": 80
+    },
+    {
+      "name": "Terminal",
+      "letter": "T",
+      "keyWord": "tools",
+      "percent": 100
+    },
+    {
+      "name": "Gulp",
+      "letter": "G",
+      "keyWord": "tools",
+      "percent": 50
+    },
+    {
+      "name": "NPM",
+      "letter": "N",
+      "keyWord": "tools",
+      "percent": 60
+    },
+    {
+      "name": "Composer",
+      "letter": "C",
+      "keyWord": "tools",
+      "percent": 70
+    }
+  ],
+  "works" : [
+    {
+      "id": 0,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/gabrica_media_bz5jff.jpg",
+      "title": "Gabrica Media",
+      "team": "Single",
+      "tools": "Angular, HTML, CSS3, DynamoDB, S3, SQL, REST API",
+      "content": "Gabrica media is a project for principal customers of the company where the users can download digital resources for their e-commerce, social media and digital portals",
+      "likes": 10,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        },
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_detalle_f7wcfw.jpg"
+        },
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/catalogo_dedqas.jpg"
+        },
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/videos_tezpxc.jpg"
+        }
+      ],
+      "iLike": false
+    },
+    {
+      "id": 1,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/induccion_gabrica_xe0slh.jpg",
+      "title": "Web Induction Gabrica",
+      "team": "Single",
+      "tools": "PHP, MySQL, jQuery, HTML, CSS3, JS",
+      "content": "This project is the first step that the aploys doing when arrive to Gabrica, there the users can learn about the company and their rules. They have one for each country.",
+      "likes": 2,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        }
+      ],
+      "iLike": false
+    },
+    {
+      "id": 2,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/cuponera_ja3mdp.jpg",
+      "title": "Cuponera | Farmatodo",
+      "team": "Develop Team",
+      "tools": "Angular, HTML, CSS3, SSAS, REST API",
+      "content": "This is a specific function when the user can redeem your coupons, delete or change one coupon. The user can also generate a QR code for redeem in a physical point.",
+      "likes": 5,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        }
+      ],
+      "iLike": false
+    },
+    {
+      "id": 3,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/gabrica_oqyoon.jpg",
+      "title": "Gabrica`s Web Site (Co, Cl, Pe)",
+      "team": "Single",
+      "tools": "Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS",
+      "content": "This web site was created in the CMS wordpress and the template was developed for the company, this web site has a unique CMS for the three countries and for each has your self front",
+      "likes": 22,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        }
+      ],
+      "iLike": false
+    },
+    {
+      "id": 4,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638848207/neon_sxumh5.jpg",
+      "title": "Neon",
+      "team": "Develop Team",
+      "tools": "Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS",
+      "content": "Neon`s web is a little shop of a book for childrens that want to learn english, there the users can learn about the book and know more about his history",
+      "likes": 14,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        }
+      ],
+      "iLike": false
+    },
+    {
+      "id": 5,
+      "preview": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638849180/happina_dbdefi.jpg",
+      "title": "Happina",
+      "team": "Develop Team",
+      "tools": "Wordpress, PHP, SQL, HTML, CSS3, jQuery, JS",
+      "content": "Happina`s web page when the user can book a room, read the blog articles about the city and your incredible scenery",
+      "likes": 13,
+      "gallery": [
+        {
+          "label": "",
+          "image": "https://res.cloudinary.com/dtaxfimxy/image/upload/v1638850015/gabrica_media/campanias_xssvvb.jpg"
+        }
+      ],
+      "iLike": false
+    }
+  ]
+}
