@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators';
 import { SkillsService } from '../../services/skills.service'
 
 @Component({
@@ -7,7 +8,7 @@ import { SkillsService } from '../../services/skills.service'
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  public skills : object;
+  public skills : any;
 
   constructor(
     private skillService: SkillsService
@@ -15,20 +16,49 @@ export class SkillsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.skills = Object.values(this.skillService.getSkills()).filter(i => i.keyWord === 'technologies');
+    // this.skills = Object.values(this.skillService.getSkills()).filter(i => i.keyWord === 'technologies');
+    this.getExperiencesFire();
+    //Object.keys(this.skills).filter(i => i['keyWord'] === 'technologies');
   }
 
-  filterSkills( filters:string ){
-    this.skills = [];
-    console.log(Object.values(this.skills).filter(i => i.keyWord === filters));
+  async getExperiencesFire(){
+    this.skillService.getSkills().snapshotChanges().pipe(
+      map( change =>
+       change.map( c =>({
+         id: c.payload['key'], ...c.payload.val()
+       }))
+      )
+    ).subscribe( data =>{
+      this.skills = data.filter(i => i.keyWord === 'technologies');
+    } )
+ }
 
+  filterSkills( filters:string ){
+    // this.skills = [];
     if(filters !== 'all'){
-      this.skills = this.skillService.getSkills();
-      return this.skills = Object.values(this.skills).filter(i => i.keyWord === filters);
+      this.skillService.getSkills().snapshotChanges().pipe(
+        map( change =>
+         change.map( c =>({
+           id: c.payload['key'], ...c.payload.val()
+         }))
+        )
+      ).subscribe( data =>{
+        this.skills = data.filter(i => i.keyWord === filters);
+      } )
+      return this.skills;
     }
 
     if(filters === 'all'){
-      this.skills = this.skillService.getSkills();
+      this.skillService.getSkills().snapshotChanges().pipe(
+        map( change =>
+         change.map( c =>({
+           id: c.payload['key'], ...c.payload.val()
+         }))
+        )
+      ).subscribe( data =>{
+        this.skills = data.filter(i => i.keyWord === 'technologies');
+      } )
+      return this.skills
     }
   }
 
