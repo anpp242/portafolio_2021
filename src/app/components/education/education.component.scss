@@ -1,5 +1,5 @@
 #education{
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -8,11 +8,5 @@
     color: #016D87;
     font-size: 34px;
     margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #education{
-    min-height: 50vh !important;
   }
 }
