@@ -16,7 +16,7 @@
   }
 
   @media (max-width: 768px) {
-    .btn-back, .btn-next{
+    .btn-back, .btn-n{
       display: flex !important;
     }
   }
@@ -29,7 +29,7 @@
       transform: rotate(0.5turn);
     }
   }
-  .btn-next{
+  .btn-n{
     position: absolute;
     right: .4rem;
     top: 25%;
