@@ -10,6 +10,31 @@
     font-size: 34px;
     margin-bottom: 2rem;
   }
+  .btn-navigation{
+    display: none;
+    background: #00CBD8;
+  }
+
+  @media (max-width: 768px) {
+    .btn-back, .btn-next{
+      display: flex !important;
+    }
+  }
+
+  .btn-back{
+    position: absolute;
+    left: .4rem;
+    top: 25%;
+    img{
+      transform: rotate(0.5turn);
+    }
+  }
+  .btn-next{
+    position: absolute;
+    right: .4rem;
+    top: 25%;
+  }
+
   .box-experiences{
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +125,7 @@
     padding: 1rem !important;
     display: block !important;
   }
+
 }
 
 

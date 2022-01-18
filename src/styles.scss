@@ -52,3 +52,27 @@ h2{
     }
   }
 }
+
+.btn-navigation{
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.btn-back{
+  position: absolute;
+  left: .4rem;
+  top: 50%;
+  img{
+    transform: rotate(0.5turn);
+  }
+}
+
+.btn-next{
+  position: absolute;
+  right: .4rem;
+  top: 50%;
+}

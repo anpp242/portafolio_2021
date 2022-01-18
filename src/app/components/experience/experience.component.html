@@ -3,6 +3,10 @@
     <h2>WORK EXPERIENCE</h2>
 
     <div class="box-experiences">
+      <a class="btn-navigation btn-back" (click)="owlExperiences.prev()">
+        <img src="./assets/images/next.png" alt="prev">
+      </a>
+
       <div class="box-slide-experiences box40">
         <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" #owlExperiences>
 
@@ -17,6 +21,10 @@
 
         </owl-carousel-o>
       </div>
+
+      <a class="btn-navigation btn-next" (click)="owlExperiences.next()">
+        <img src="./assets/images/next.png" alt="next">
+      </a>
 
       <div class="box-info-expetiernces box60">
         <a class="btn btn-next" (click)="owlExperiences.next()">

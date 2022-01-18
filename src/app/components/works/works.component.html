@@ -2,7 +2,7 @@
   <div class="content">
     <h2>LAST PROJECTS</h2>
 
-    <owl-carousel-o [options]="customOptions">
+    <owl-carousel-o #carouselSlide [options]="customOptions">
       <ng-template carouselSlide *ngFor="let work of works">
         <div class="slide">
           <app-work-card
@@ -18,6 +18,12 @@
         </div>
       </ng-template>
     </owl-carousel-o>
+    <a class="btn-navigation btn-back" (click)="carouselSlide.prev()">
+      <img src="./assets/images/next.png" alt="prev">
+    </a>
+    <a class="btn-navigation btn-next" (click)="carouselSlide.next()">
+      <img src="./assets/images/next.png" alt="next">
+    </a>
 
   </div>
 </div>

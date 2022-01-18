@@ -20,7 +20,7 @@ export class GalleryComponent implements OnInit {
       autoplay: false,
       mouseDrag: true,
       autoHeight: true,
-      touchDrag: false,
+      touchDrag: true,
       pullDrag: true,
       //navSpeed: 5000,
       autoplayHoverPause: true,

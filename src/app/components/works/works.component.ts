@@ -22,8 +22,8 @@ export class WorksComponent implements OnInit {
       items: 3,
       lazyLoad: true,
       autoplay: false,
-      mouseDrag: true,
-      touchDrag: true,
+      mouseDrag: false,
+      touchDrag: false,
       pullDrag: true,
       navSpeed: 1500,
       autoplayHoverPause: true,
@@ -31,15 +31,15 @@ export class WorksComponent implements OnInit {
       responsive: {
         0: {
           items: 1,
-          dots: true,
+          dots: false,
         },
         400: {
           items: 2,
-          dots: true,
+          dots: false,
         },
         760: {
           items: 3,
-          dots: true,
+          dots: false,
         },
         1000: {
           items: 3,
