@@ -7,7 +7,7 @@
         </ng-template>
         <ng-template carouselSlide *ngFor="let image of images">
             <div class="slide">
-                <img src="{{image.image}}" alt="image.label">
+                <img src="{{image.image}}" alt="{{image.label}}">
             </div>
         </ng-template>
     </owl-carousel-o>
