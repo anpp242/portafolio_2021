@@ -9,10 +9,12 @@ import { SkillsService } from '../../services/skills.service'
 })
 export class SkillsComponent implements OnInit {
   public skills : any;
+  public filterSelected : string;
 
   constructor(
     private skillService: SkillsService
   ) {
+    this.filterSelected = 'technologies'
   }
 
   ngOnInit(): void {
@@ -33,7 +35,8 @@ export class SkillsComponent implements OnInit {
     } )
  }
 
-  filterSkills( filters:string ){
+  filterSkills( filters:string, event ){
+    this.filterSelected = filters;
     // this.skills = [];
     if(filters !== 'all'){
       this.skillService.getSkills().snapshotChanges().pipe(

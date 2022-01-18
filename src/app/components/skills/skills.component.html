@@ -8,10 +8,10 @@
         </p>
         <ul>
           <!-- <li><a (click)="filterSkills( 'all' )">All</a></li> -->
-          <li><a (click)="filterSkills( 'technologies' )">Technologies</a></li>
-          <li><a (click)="filterSkills( 'frameworks' )">Frameworks</a></li>
-          <li><a (click)="filterSkills( 'tools' )">Tools</a></li>
-          <li><a (click)="filterSkills( 'design' )">Design</a></li>
+          <li><a (click)="filterSkills( 'technologies', $event )" [class.filter-active]="filterSelected === 'technologies' ">Technologies</a></li>
+          <li><a (click)="filterSkills( 'frameworks', $event )" [class.filter-active]="filterSelected === 'frameworks' ">Frameworks</a></li>
+          <li><a (click)="filterSkills( 'tools', $event )" [class.filter-active]="filterSelected === 'tools' ">Tools</a></li>
+          <li><a (click)="filterSkills( 'design', $event )" [class.filter-active]="filterSelected === 'design' ">Design</a></li>
         </ul>
       </div>
     </div>
