@@ -4,6 +4,9 @@
   background: #003857;
   color: #ffffff;
   padding: 5rem 0;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
   h3{
     font-family: Poppins;
     font-style: normal;
