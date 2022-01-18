@@ -29,14 +29,29 @@
       flex-direction: row;
       align-items:flex-start;
       align-content: flex-start;
+      /* @media (max-width: 768px) {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #007b95;
+        top: 0;
+        left: 0;
+        line-height: 6rem;
+      } */
       li{
         list-style: none;
         margin-right: 1rem;
         a{
+
           color: #007b95;
           text-decoration: none;
           transition: all .2s ease;
           font-size: 1.2rem;
+          /* @media (max-width: 768px) {
+            color: #ffffff;
+            font-size: 2.2rem;
+            font-weight: 300;
+          } */
           &:hover{
             color: #004562;
             font-weight: 400;
