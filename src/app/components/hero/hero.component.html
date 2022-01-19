@@ -3,12 +3,13 @@
     <img (click)="openMenu()" class="menu-button" src="./assets/images/menu.svg" alt="Linkedin" width="36" height="36">
     <div class="menu" [ngClass]="menuStatus ? 'open' : 'close'">
       <ul>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#works">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#footer">Contact</a></li>
+        <div class="close-mobile" (click)="openMenu()">X</div>
+        <li><a href="#about" (click)="openMenu()">About me</a></li>
+        <li><a href="#skills" (click)="openMenu()">Skills</a></li>
+        <li><a href="#works" (click)="openMenu()">Projects</a></li>
+        <li><a href="#experience" (click)="openMenu()">Experience</a></li>
+        <li><a href="#education" (click)="openMenu()">Education</a></li>
+        <li><a href="#footer" (click)="openMenu()">Contact</a></li>
       </ul>
     </div>
     <div class="box-hero">
