@@ -18,7 +18,11 @@
     <div class="items-skills">
       <div class="box-items-skills">
         <div *ngFor="let skill of skills">
-          <app-skill-card [letter]="skill.letter" [name]="skill.name"></app-skill-card>
+          <app-skill-card
+          [letter]="skill.letter"
+          [name]="skill.name"
+          [percent]="skill.percent"
+          ></app-skill-card>
         </div>
       </div>
     </div>

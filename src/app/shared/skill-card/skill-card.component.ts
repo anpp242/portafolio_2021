@@ -8,10 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SkillCardComponent implements OnInit {
   @Input() letter: string;
   @Input() name: string;
+  @Input() percent: string;
+  public stylePercent: string;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+    this.stylePercent = `width: ${this.percent}%`;
   }
 
 }

@@ -25,6 +25,20 @@
       font-weight: 300;
     }
   }
+  .progress-box{
+    border: 0.1rem solid #a4bebe;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 3rem;
+    .progress{
+      height:.5rem;
+      background: #a4bebe;
+      border-radius: 3rem;
+    }
+  }
 }
 
 @keyframes start {
