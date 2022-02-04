@@ -2,4 +2,5 @@
   <h2>{{grade.place}}</h2>
   <p>{{grade.grade}}</p>
   <h4>{{grade.date}}</h4>
+  <h4 class="tags" [ngClass]="{'course': grade.tags === 'Course'}">{{grade.tags}}</h4>
 </div>
