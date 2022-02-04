@@ -9,6 +9,7 @@ export class SkillCardComponent implements OnInit {
   @Input() letter: string;
   @Input() name: string;
   @Input() percent: string;
+  @Input() color: string;
   public stylePercent: string;
 
   constructor() {
